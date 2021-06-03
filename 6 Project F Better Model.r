@@ -16,10 +16,6 @@ data.frame(budget, portfolio_size)
 allocation = rep(budget/portfolio_size, portfolio_size)
 fmt(allocation)
 
-# Retrieve "My Data.csv"
-#   ... OR ...
-# Retrieve "Company Fundamentals 2017.csv"
-
 # This is the ORIGINAL data.
 data = read.csv('My Data.csv', header=TRUE)
 data$big_growth = factor(data$big_growth, levels=c("YES", "NO"))
@@ -66,9 +62,6 @@ model$weights[[1]]
 output_size(5,5)
 plot(model, rep=1, fill="gray", show.weights=TRUE, information=FALSE, cex=0.7, lwd=0.5, arrow.length=0.15)
 output_size(restore)
-
-# Transform representation of data, if necessary
-
 
 # Construct a model to predict big_growth or growth.
 # Present a brief summary of the model parameters.
