@@ -1,4 +1,4 @@
-analyst = "Shirley Wang" # Replace this with your name
+analyst = "Shirley Wang" 
 
 f = "setup.R"; for (i in 1:10) { if (file.exists(f)) break else f = paste0("../", f) }; source(f)
 options(repr.matrix.max.rows=674)
